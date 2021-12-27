@@ -1,2 +1,1 @@
-# desktop-tutorial
-GitHub Desktop tutorial repository
+# HeadHunter proj
