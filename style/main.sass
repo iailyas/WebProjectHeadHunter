@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap')
+@import uiElements.scss
+@import header.scss
+@import load.scss
+@import personalOffise.scss
+
+    
+@media (max-width: 10px)
+  position: absolute
+  width: 20%
+  left: 70%
+  transfrom: translateX(-70%)
+.main__lable
+        display: block
+        position: relative
+        left: 600px
+        top: 350px
+        font-family: Montserrat
+        font-size: 48px
+        color: #FFFFFF
+        transition: all ease 1s
+        @media (max-width: 1360px)
+            
+              left: 150px
+              top: 350px
+              content: "Chapter "
+.main__title
+        display: block
+        position: relative
+        left: 800px
+        top: 350px
+        font-family: Montserrat
+        color: #FFFFFF
+        transition: all ease 1s
+        @media (max-width: 1151px)
+              left: 250px
+              top: 350px
+.main__order
+    position: relative
+    width: 100%
+    height: 880px
+    overflow: hidden
+    .main__header
+        position: absolute
+        width: 100%
+        height: 100%
+        background-image: url("../image/1.png")
+    .main__form
+        position: relative
+        z-index: 10
+        float: right
+        background-color: rgba(145, 180, 199,0.7 )
+        width: 470px
+        height: 400px
+        margin: 80px 30px 0 0
+        border-radius: 9px
+        transition: all ease 1s
+        @media (max-width: 1057px)
+            float: left
+            top: 390px
+            width: 100%
+        .main__button--disable
+            display: none
+            width: 50px
+            @media (max-width: 800px)
+                display: block
+                position: absolute
+                margin-left: calc( 50% - 25px )
+                top: -30px
+        .main__checkbox
+            width: 90%
+            margin-left: 5%
+            margin-top: 20px 
+            display: flex
+            justify-content: space-between
+            div
+                width: 130px 
+                height: 130px
+                background-color:#fff
+                border-radius: 15px
+                text-align: center
+                cursor: pointer
+                &:hover
+                    background-color:#eee
+                &:active
+                    background-color: #ccc
+            .main__comfort
+                    background-image: url("../image/icon/car2.png")
+                    background-repeat: no-repeat
+                    background-position-x: 12px
+                    background-position-y: -15px
+                    p
+                        font-size: 20px
+                        &:first-child
+                            margin-top: 60px 
+                         
+            .main__econom
+                    background-image: url("../image/icon/car1.png")
+                    background-repeat: no-repeat
+                    background-position-x: 12px
+                    background-position-y: -15px
+                    p
+                        font-size: 20px
+                        &:first-child
+                            margin-top: 60px 
+                          
+            .main__lux
+                    background-image: url("../image/icon/car3.png")
+                    background-repeat: no-repeat
+                    background-position-x: 12px
+                    background-position-y: -15px
+                    p
+                        font-size: 20px
+                        &:first-child
+                            margin-top: 60px 
+
+                             
+        .main__input,.main__button
+            box-sizing: border-box
+            width: 90%
+            margin-left: 5%
+            margin-top: 20px 
+            height: 54px
+            &:first-child
+                margin-top: 30px 
+
+    .main__anchor
+        display: block
+        position: relative
+        top: 400px
+        left: 850px
+        font-family: Montserrat
+        border-radius: 40px 
+        font-size: 20px
+        padding: 10px
+        transition: all ease 1s
+        background-color: #4985FF
+        width: max-content
+        @media (max-width: 1057px)
+              display: inline-block
+              position: relative
+              top: 440px
+              left: 320px
+        
+.traffic
+    width: 100%
+    height: 800px
+    background-color: #ffffff
+    background-repeat: no-repeat
+    background-size: cover
+    @media (max-width: 800px) 
+        height: 1000px
+        background-image: none
+        background-color: #ffffff
+    .traffic-header
+        width: 100%
+        display: block
+        text-align: center
+        background-color: #ffffff
+        h2
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+    .traffic-content
+        width: 84%
+        height: 100%
+        .traffic-content-city
+            display: block
+            position: sticky
+            float: left 
+            margin: 225px
+            margin-top: -51px 
+            width: 10px
+            height: 120px
+            background-color: #dd5668b3
+            text-align: center
+            border-radius: 100px
+            top: -73px
+            @media (max-width: 1256px) 
+                width: 100%
+                margin: -18px 0 20px 2px
+            h3
+                font-size: 25px
+                padding: 10px
+                color: #000000
+                width: 300px
+                margin: auto
+            h5
+                font-family: Arial
+                font-size: 15px
+                padding: 10px
+                color: #2e2c2c
+                width: 300px
+                margin: auto
+            h6
+                font-family: Arial
+                font-size: 25px
+                padding: 10px
+                color: #2e2c2c
+                width: 300px
+                margin: auto
+        .traffic-content-cityfrom
+            margin-right: 30px
+            margin-top: 50px 
+            float: right
+            width: 40%
+            height: 400px
+            background-color: rgba(145, 180, 199,0.7 )
+            text-align: center
+            border-radius: 10px 
+            @media (max-width: 800px) 
+                margin: 0
+                float: left
+                width: 100% 
+            h3
+                font-size: 36px
+                padding: 10px
+                margin: 0px
+                color: #fff
+        table
+            margin-left: 15% 
+            width: 90%
+            height: 300px
+            left: 30px
+            background-color: #FFFFFF
+            font-size: 30px
+            border-radius: 10px
+            @media (max-width: 1200px) 
+                font-size: 20px
+            tr
+                display: block
+                position: relative
+                left: 30px
+                border-bottom: 1pt solid #9EBBCB
+.work
+    display: inline-block
+    width: 100%
+    height: 800px
+    background-color:#e5e5ec
+    @media (max-width: 800px)
+            height: 940px
+            background-color: #e5e5ec
+    .work-header
+        width: 100%
+        display: block
+        text-align: left
+        background-color: #e5e5ec
+        h2
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+    .work-content
+        width: 105%
+        height: 100%
+        margin-top: 40px 
+        .h8
+            font-family: Montserrat
+            font-weight: bold 
+            color: #111010
+            padding: 10px
+            margin: 14px 
+            font-size: 36px
+        .h7
+            font-family: Montserrat
+            color: #646363
+            padding: 17px
+            margin: 17 px
+            font-size: 36px
+        .parent
+	        height: 90%
+            width: 30%
+        .child
+	        height: 100%
+	        display: inline-grid
+	        background: #fdfdfd
+	        width: 32%
+            position: relative
+        .work-content-adventuries
+            display: block
+            position: relative
+            margin: left
+            width: 17%
+            border-spacing: 1px
+            @media (max-width: 800px)
+                  width: 100%
+                  margin-left: 10px
+                  height: 300px
+            div
+                
+                left: 25px
+            h2
+              color: #999999
+              font-size: 45px
+              @media (max-width: 1200px)
+                  font-size: 35px
+              
+            h3
+              font-size: 40px 
+              color: #686262
+              position: relative
+              @media (max-width: 1200px)
+                 font-size: 30px
+
+   
+        .work-content-form
+            float: right
+            width: 40%
+            height: 500px
+            margin-right: 20px
+            text-align: center
+            @media (max-width: 800px)
+                  width: 100%
+                  height: 300px
+                  margin-right: 0
+                  margin-top: 130px 
+            h2
+                font-size: 40px
+                color: #fff
+                @media (max-width: 1200px)
+                  font-size: 27px
+                @media (max-width: 800px)
+                  display: none
+            form 
+                border-radius: 15px 
+                height: 400px
+                background-color: rgba(145, 180, 199,0.9 )
+                button
+                    width: 50%
+                    height: 80px
+                    margin-top: 20px
+                    border-radius: 10px 
+                input
+                        width: 90%
+                        margin-left: 1%
+                        box-sizing: border-box
+                        border-radius: 10px 
+                        margin-top: 20px 
+                        height: 70px
+.review
+    width: 100%
+    height: 650px
+    background: linear-gradient(to right, #72C24D, #4a82e9)
+    .parent
+	    height: 90%
+        width: 30%
+    .child
+	    display: inline-grid
+	    width: 32%
+        position: relative
+            
+    .h8
+        font-family: Montserrat
+        font-weight: bold 
+        color: #fafafa
+        padding: 10px
+        margin: 14px 
+        font-size: 36px
+    .h7
+        font-family: Montserrat
+        color: #534c4c
+        padding: 17px
+        margin: 17 px
+        font-size: 36px
+    
+    .review-header
+        width: 100%
+        display: block
+        text-align: center
+        background: linear-gradient(to right, #72C24D, #4a82e9);
+        h2
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+    .review-content
+        width: 100%
+        height: 100%
+       
+        .slider-prev
+            position: relative
+            float: left
+            top: -250px
+        .slider-next
+            position: relative
+            float: right
+            top: -250px
+        .slider
+            margin-top: 40px 
+            margin-left: 150px 
+            width: calc(100% - 300px)
+            overflow: hidden
+            @media (max-width: 800px)
+                 margin-left: 80px
+                 width: calc(100% - 160px)
+            .slider-line
+                width: 200%
+                display: flex
+                position: relative
+                transition: all ease 1s
+                @media (max-width: 1200px)
+                        width: 300%
+                @media (max-width: 800px)
+                        width: 600%
+                .slider-line-item
+                    border-radius: 10px 
+                    margin: 20px 
+                    width: 30%
+                    background-color: rgba(72, 117, 142 ,0.7 )
+                    @media (max-width: 800px)
+                        width: 100%
+                    .user
+                        margin: 10px
+                        img
+                            width: 40%
+                        h2
+                            position: relative
+                            font-size: 30px 
+                            top: -70px
+                            margin-left: 5%
+                            display: inline
+                            @media (max-width: 1200px)
+                              font-size: 25px
+                              top: -60px
+                        .stars
+                            position: relative
+                            top: -50px
+                            margin-left: 46%
+                            display: inline-block
+                            width: 50%
+                            img
+                                width: 16%
+                    p
+                        margin: 10px
+                        padding: 10px
+                        border-radius: 10px  
+                        font-size: 30px
+                        background-color: rgba(201, 217, 225 ,0.7 )
+                        @media (max-width: 1200px)
+                            font-size: 25px
+                    
+.contacts
+    width: 100%
+    height: 520px
+    background-image: url("../image/video.png")
+    background-repeat: no-repeat
+    background-size: cover
+    @media (max-width: 800px)
+        height: 500px
+    .contacts-header
+        width: 100%
+        display: block
+        text-align: center
+        background-color: #91B4C7
+        h2
+            
+            color: #fff
+            padding: 0px
+            margin: 0
+            font-size: 0px
+    .contacts-content
+        width: 90%
+        height: calc(100% - 190px)
+        margin-top: 40px
+        margin-left: 34%
+        padding: 20px 
+        border-radius: 10px
+        h3
+            font-family: Montserrat
+            color: #fff
+            padding: 10px
+            margin: 0
+            font-size: 48px
+            display: block
+            position: relative
+            left: -168px
+        @media (max-width: 800px)
+            width: 100%
+            margin-left: 0
+            padding-left: 0
+            margin-top: 0 
+        .contacts-content-text-right
+            float: right
+            width: 50%
+            @media (max-width: 800px)
+                width: 100%
+            p
+                float: right
+                margin-top: 5%
+                font-size: 35px
+                color: #fff
+                @media (max-width: 800px)
+                    width: 100%
+                    font-size: 24px
+                    margin-top: 20px
+                    margin-left: 10px
+                    float: left
+                    color: #000  
+            .social
+                display: inline-block
+                float: right
+                text-align: center
+                @media (max-width: 800px)
+                   width: 100%
+                   background-color: $divBackgroundColor
+                img
+                    width: 20%
+                    @media (max-width: 800px)
+                       width: 10%
+        .contacts-content-text-left
+            float: left
+            width: 50%
+            @media (max-width: 800px)
+                width: 100%
+            p
+                margin-top: 5%
+                font-size: 35px
+                color: #fff
+                @media (max-width: 800px)
+                    margin-top: 40px 
+                    font-size: 24px
+                    margin-left: 10px
+                    color: #000 
+        
+@import footer.scss

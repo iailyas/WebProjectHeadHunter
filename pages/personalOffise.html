@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__flexbox">
+            <div class="header__logo--left">
+                <h2 class="header__text" onclick="gotoPage('../index.html')">РАБОТА У АШОТА</h2>
+            </div>
+            <nav class="header__navigation">
+                <a href="../index.html#main" class="header__anchor">Главная</a>
+                <a href="../index.html#traffic" class="header__anchor">Тарифы</a>
+                <a href="../index.html#work" class="header__anchor">Работа</a>
+                <a href="../index.html#review" class="header__anchor">Отзывы</a>
+                <a href="../index.html#contacts" class="header__anchor">Контакты</a>
+            </nav>
+            <div class="header__authorization-active">
+              <button class="header__button" onclick="authorization()">Войти</button>
+            </div>
+            <div class="header__authorization-disable">
+              <p class="header__paragraph">Имя пользователя</p>
+              <button class="header__button" onclick="authorization()">Выйти</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+       <div class="main__load">
+           <div class="main__container--left">
+           <button class="main__button">Загрузить фото</button>
+           </div>
+           <form class="main__form--right">
+            <input class="main__input" placeholder="Имя пользователя"/>
+            <input class="main__input" placeholder="Телефон"/>
+            <input class="main__input" placeholder="Пароль"/>
+            <input class="main__input" placeholder="E-mail"/>
+            <button class="main__button">Сохранить изменения</button>
+           </form>      
+       </div>
+    </main>
+    <script src="../scrips/script.js"></script>
+</body>
+</html>

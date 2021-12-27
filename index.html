@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <!--nav bar -->
+    <header class="header">
+      <div class="header__flexbox">
+        <div class="header__logo--left">
+          <h2 class="header__text">РАБОТА У АШОТА</h2>
+        </div>
+        <nav class="header__navigation">
+          <a href="#main" class="header__anchor">Главная</a>
+          <a href="#traffic" class="header__anchor">Наши партнёры</a>
+          <a href="#work" class="header__anchor">Соискателям</a>
+          <a href="#review" class="header__anchor">Работодателям</a>
+          <a href="#contacts" class="header__anchor">Контакты</a>
+        </nav>
+        <div class="header__navigationSelect">
+          <img
+            class="header__selectButton"
+            src="image/icon/navbar.png"
+            onclick="hideSelect()"
+          />
+        </div>
+        <div class="header__authorization-active">
+          <button class="header__button" onclick="authorization()">
+            Войти
+          </button>
+        </div>
+        <div class="header__authorization-disable">
+          <p
+            class="header__paragraph"
+            onclick="gotoPage('./pages/personalOffise.html')"
+          >
+            Имя пользователя
+          </p>
+          <button class="header__button" onclick="authorization()">
+            Выйти
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__navbar--hidden">
+        <a href="#main" class="main__anchor">Главная</a>
+        <a href="#traffic" class="main__anchor">Партнёры</a>
+        <a href="#work" class="main__anchor">Работа</a>
+        <a href="#review" class="main__anchor">Работники</a>
+        <a href="#contacts" class="main__anchor">Контакты</a>
+      </div>
+      <section class="main__order">
+        <div class="main__header">
+
+        <a class="main__title" name="main__title">Передовая компания по поиску работы</a>
+        <a class="main__lable" name="main__lable">Работа найдется для каждого</a>
+        <a class="main__anchor" name="main">Создать резюме</a>
+        
+      </div>
+      </section>
+      <section class="traffic">
+        <div class="traffic-header">
+          <h2><a name="traffic"></a>Тарифы</h2>
+        </div>
+        <div class="traffic-content">
+          <div class="traffic-content-city">
+            <h3>Вакансия дня</h3>
+            <h5>1000-5000 руб.</h5>
+            <h6>14 вакансий</h6>
+          </div>
+          <div class="traffic-content-city">
+            <h3>Вакансия дня</h3>
+            <h5>1000-5000 руб.</h5>
+            <h6>14 вакансий</h6>
+          </div>
+          <div class="traffic-content-city">
+            <h3>Вакансия дня</h3>
+            <h5>1000-5000 руб.</h5>
+            <h6>14 вакансий</h6>
+          </div>
+          <div class="traffic-content-city">
+            <h3>Вакансия дня</h3>
+            <h5>1000-5000 руб.</h5>
+            <h6>14 вакансий</h6>
+          </div>
+          <div class="traffic-content-city">
+            <h3>Вакансия дня</h3>
+            <h5>1000-5000 руб.</h5>
+            <h6>14 вакансий</h6>
+          </div>
+          <div class="traffic-content-city">
+            <h3>Вакансия дня</h3>
+            <h5>1000-5000 руб.</h5>
+            <h6>14 вакансий</h6>
+          </div>
+          
+          
+          
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="work-header">
+        </div>
+          <div class="work-content">
+
+            
+        
+        
+        <div class="parent">
+          <div class="child">
+            <div class="h8">Работа в компаниях</div>
+            <div class="h7">Лаборатория Гемотест</div>
+            <div class="h7">iTechArt</div>
+            <div class="h7">Epam</div>
+          </div>
+        
+          <div class="child">
+            <div class="h8">Вакансии дня в Витебске</div>
+            <div class="h7">Костелянша</div>
+            <div class="h7">Дизайнер</div>
+            
+          </div>
+          <div class="child">
+            <div class="h8">Работа по профессиям</div>
+            <div class="h7">Администрация</div>
+            <div class="h7">Банки</div>
+            <div class="h7">Безопасность</div>
+            <div class="h7">Бухгалтерия</div>
+            <div class="h7">Предприятия</div>
+          </div>
+        </div>
+        
+      </section>
+      <section class="review">
+        <div class="review-header">
+          <h2><a name="review"></a></h2>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <div class="h8">Работа в компаниях</div>
+            <div class="h7">Лаборатория Гемотест</div>
+            <div class="h7">iTechArt</div>
+            <div class="h7">Epam</div>
+          </div>
+        
+          <div class="child">
+            <div class="h8">Вакансии дня в Витебске</div>
+            <div class="h7">Костелянша</div>
+            <div class="h7">Дизайнер</div>
+            
+          </div>
+        
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts-header">
+          <h2><a name="contacts"></a>Контакты</h2>
+        </div>
+        <div class="contacts-content">
+          <h3>Просто посмотрите, как мы работаем</h3>
+          <iframe width="560"
+           height="315"
+            src="https://www.youtube.com/embed/a0fkNdPiIL4"
+            title="YouTube video player"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+      
+        </div>
+      </section>
+    </main>
+    <footer class="footer">      
+      <div class="footer__copurate">
+        <h4 class="footer__text">Контактная информация</h4>
+        <h4 class="footer__text">Контакты</h4>
+        <h4 class="footer__text">Социальные сети</h4>
+      </div>
+      <h2 class="footer__text">(с) 2021. Все права защищены.</h2>
+    </footer>
+    <script src="./scrips/script.js"></script>
+    <script src="./scrips/slider.js"></script>
+  </body>
+</html>
