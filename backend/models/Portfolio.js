@@ -7,10 +7,6 @@ const Portfolio = sequelize.define("Portfolio", {
     primaryKey: true,
     allowNull: false,
   },
-  user_id: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-  },
   skills: {
     type: DataTypes.STRING,
     allowNull: false,

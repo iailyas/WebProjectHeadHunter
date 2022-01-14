@@ -20,10 +20,6 @@ const Company = sequelize.define("Company", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  manager_id: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-  },
   description: {
     type: DataTypes.STRING,
     allowNull: false,

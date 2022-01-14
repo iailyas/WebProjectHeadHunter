@@ -19,10 +19,6 @@ const Summary = sequelize.define("Summary", {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
-  vacancy_id: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-  },
 });
 
 module.exports = Summary;
