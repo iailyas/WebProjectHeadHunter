@@ -4,7 +4,7 @@ const vacanciesController = require("../controllers/vacanciesController");
 
 vacanciesRouter.get("/:id", vacanciesController.findVacancyById);
 vacanciesRouter.get("/", vacanciesController.findAllVacancies);
-vacanciesRouter.post("/", vacanciesController.addVacancy);
+vacanciesRouter.post("/new", vacanciesController.addVacancy);
 vacanciesRouter.put("/:id", vacanciesController.changeVacancyById);
 vacanciesRouter.delete("/:id", vacanciesController.deleteVacancyById);
 

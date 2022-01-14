@@ -4,7 +4,7 @@ const workingplaceController = require("../controllers/working_placeController")
 
 WorkingPlaceRouter.get("/:id", workingplaceController.findWorkingPlaceById);
 WorkingPlaceRouter.get("/", workingplaceController.findWorkingPlace);
-WorkingPlaceRouter.post("/", workingplaceController.addWorkingPlace);
+WorkingPlaceRouter.post("/new", workingplaceController.addWorkingPlace);
 WorkingPlaceRouter.put("/:id", workingplaceController.changeWorkingPlace);
 WorkingPlaceRouter.delete("/:id", workingplaceController.deleteWorkingPlace);
 

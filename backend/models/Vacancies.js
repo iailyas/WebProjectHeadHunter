@@ -11,10 +11,6 @@ const Vacancies = sequelize.define("Vacancies", {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
-  company_id: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-  },
   contacts: {
     type: DataTypes.STRING,
     allowNull: false,

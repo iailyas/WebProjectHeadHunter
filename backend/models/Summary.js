@@ -11,10 +11,6 @@ const Summary = sequelize.define("Summary", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  user_id: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-  },
   salary: {
     type: DataTypes.INTEGER,
     allowNull: false,

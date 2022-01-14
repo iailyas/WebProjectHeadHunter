@@ -4,7 +4,7 @@ const summaryController = require("../controllers/summaryController");
 
 summaryRouter.get("/:id", summaryController.findSummary);
 summaryRouter.get("/", summaryController.findAllSummaries);
-summaryRouter.post("/", summaryController.addSummary);
+summaryRouter.post("/new", summaryController.addSummary);
 summaryRouter.put("/:id", summaryController.changeSummary);
 summaryRouter.delete("/:id", summaryController.deleteSummary);
 

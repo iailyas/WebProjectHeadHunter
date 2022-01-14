@@ -1,3 +1,4 @@
+const UserService = require("../service/UserService");
 class UserController {
   async registration(req, res) {}
 
@@ -8,16 +9,26 @@ class UserController {
     res.json({ query });
   }
 
-  async findUserById(req, res) {}
+  async findUserById(req, res) {
+    UserService.findUserById(req, res);
+  }
 
-  async findUsers(req, res) {}
+  async findUsers(req, res) {
+    UserService.findUsers(req, res);
+  }
 
   async profile(req, res) {}
 
-  async addUser(req, res) {}
+  async addUser(req, res) {
+    UserService.addUser(req, res);
+  }
 
-  async changeUserById(req, res) {}
+  async changeUserById(req, res) {
+    UserService.changeUserById(req, res);
+  }
 
-  async deleteUserById(req, res) {}
+  async deleteUserById(req, res) {
+    UserService.deleteUserById(req, res);
+  }
 }
 module.exports = new UserController();

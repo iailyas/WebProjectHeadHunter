@@ -1,53 +1,33 @@
 const WorkingPlace = require("../models/Working_place");
+const WorkingPlaceService = require("../service/WorkingPlaceService");
 class WorkingPlaceController {
   async findWorkingPlaceById(req, res) {
-    const { id } = req.params;
-    const working_place = await WorkingPlace.findOne({
-      where: { id },
-    });
+    WorkingPlaceService.findWorkingPlaceById(req, res);
   }
 
   async findWorkingPlace(req, res) {
-    const { id } = req.params;
-    const working_place = await WorkingPlace.findAll({
-      where: { id },
-    });
+    const working_place = await WorkingPlace.findAll();
+    return res.json(working_place);
   }
 
   async addWorkingPlace(req, res) {
+    console.log(req.body);
     const { name, position, start_date, end_date } = req.body;
-    const working_place = await WorkingPlace.create({
+    const workingplace = await Working_place.create({
       name,
       position,
       start_date,
       end_date,
     });
-    return res.json(working_place);
+    return res.json(workingplace);
   }
 
   async changeWorkingPlace(req, res) {
-    const { id } = req.params;
-    const working_place = await WorkingPlace.update(
-      {
-        discount: req.body.discount,
-        name: req.body.name,
-        amount: req.body.amount,
-        start_date: req.body.start_date,
-        end_date: req.body.end_date,
-      },
-      {
-        where: { id },
-      }
-    );
-    return res.json(working_place);
+    WorkingPlaceService.changeWorkingPlace(req, res);
   }
 
   async deleteWorkingPlace(req, res) {
-    const { id } = req.params;
-    const Working_place = await WorkingPlace.update({
-      where: { id },
-    });
-    return res.json(coupon);
+    WorkingPlaceService.deleteWorkingPlace(req, res);
   }
 }
 module.exports = new WorkingPlaceController();

@@ -4,7 +4,7 @@ const userinfoController = require("../controllers/userinfoController");
 
 userinfoRouter.get("/:id", userinfoController.findUserInfoById);
 userinfoRouter.get("/", userinfoController.findAllUserInfo);
-userinfoRouter.post("/", userinfoController.addUserInfo);
+userinfoRouter.post("/new", userinfoController.addUserInfo);
 userinfoRouter.put("/:id", userinfoController.changeUserInfoById);
 userinfoRouter.delete("/:id", userinfoController.deleteUserInfoById);
 
