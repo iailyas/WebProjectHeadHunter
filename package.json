@@ -21,7 +21,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "swagger-autogen": "node src/swagger/swagger.js"
+    "swagger-autogen": "node src/swagger/swagger.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
